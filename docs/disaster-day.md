@@ -41,10 +41,6 @@ marp: true
 
 ---
 
-
-
----
-
 # Disaster day resources
 
 - https://sre.google/sre-book/emergency-response#test-induced-emergency
