@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Disaster Day
 
 * [What is disaster day?](docs/disaster-day.htlm)
