@@ -41,10 +41,24 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Marp Build (docs folder)
+      - name: Marp Build (docs folder .pdf)
         uses: docker://marpteam/marp-cli:v1.7.0
         with:
           args: -I docs/ -o build/docs/
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (docs folder .pdf)
+        uses: docker://marpteam/marp-cli:v1.7.0
+        with:
+          args: --pdf -I docs/ -o build/docs/
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (docs folder .pptx)
+        uses: docker://marpteam/marp-cli:v1.7.0
+        with:
+          args: --pptx -I docs/ -o build/docs/
         env:
           MARP_USER: root:root
 
